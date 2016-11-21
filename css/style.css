@@ -162,9 +162,6 @@ body {
 .col-lg-8,
 .col-lg-12{
 	float: left;
-/*	padding-left: 15px;
-	padding-right: 15px;*/
-	box-sizing: border-box;
 }
 @media all and (max-width: 543px) {
 	.col-xs-3 {
