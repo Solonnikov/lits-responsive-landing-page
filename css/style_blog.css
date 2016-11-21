@@ -1,4 +1,3 @@
-
 html,
 body {
 	font-size: 16px;
@@ -15,6 +14,9 @@ body {
 .text-center {
 	text-align: center;
 }
+.text-justify {
+	text-align: justify;
+}
 .to-left {
 	float: left;
 }
@@ -24,16 +26,13 @@ body {
 .to-center {
 	margin: 0 auto;
 }
-.no-padding-bottom {
-	padding-bottom: 0;
+.inline-block {
+	display: inline-block;
 }
 .gradient-primary {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background: linear-gradient(to right, #812D46, #A56F66);
-}
-.title-primary {
-	font-size: 3rem;
 }
 .bg-red {
 	background-color: #E8776B;
@@ -45,8 +44,14 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.bg-grey {
+	background-color: rgba(128, 128, 128, 0.1);
+}
 .color-white {
 	color: #fff;
+}
+.main-color {
+	background-color: #fff;
 }
 .row:after {
 	display: block;
@@ -58,20 +63,8 @@ body {
 	content: '';
 	clear: both;
 }
-.col-4 {
-	float: left;
-	width: 33.33%;
-	padding: 20px;
-	box-sizing: border-box;
-}
-.col-6 {
-	float: left;
-	width: 50%;
-	padding: 20px;
-	box-sizing: border-box;
-}
 .section-primary {
-	padding: 6.25rem;
+	padding: 1.5rem 3rem;
 	clear: both;
 }
 .section-secondary {
@@ -117,24 +110,8 @@ body {
 	color: #fff;
 	cursor: pointer;
 }
-.img-primary {
-	width: 50%;
-	float: right;
-}
-.text-wrapper {
-	width: 100%;
-	text-align: justify;
-}
-
-/* Responsive Part */
-
-.text-right {
-	text-align: right;
-}
 .row {
 	display: block;
-/*	margin-left: -15px;
-	margin-right: -15px;*/
 }
 .row:after {
 	display: table;
@@ -160,10 +137,8 @@ body {
 .col-lg-4,
 .col-lg-6,
 .col-lg-8,
-.col-lg-12{
+.col-lg-12 {
 	float: left;
-/*	padding-left: 15px;
-	padding-right: 15px;*/
 	box-sizing: border-box;
 }
 @media all and (max-width: 543px) {
@@ -182,43 +157,43 @@ body {
 	.col-xs-12 {
 	    width: 100%;
 	}
-	.section-primary {
-		padding: 15px;
-	}
 	.section-secondary {
 		padding: 5px;
 	}
 	.title-primary {
-		font-size: 3rem;
+		font-size: 2rem;
 		text-align: center;
 	}
 	.title-secondary {
 		font-size: 2em;
 		text-align: center;
 	}
-	.text-wrapper {
-		text-align: justify;
-	}
-	.btn-wrapper {
-		text-align: center;
-	}
-	.img-primary {
-		width: 100%;
-	}
 	.article {
 		text-align: justify;
 	}
 	.sign-up {
-	width: 120%;
-	outline: none;
+		width: 120%;
+		outline: none;
 	}
-	.nav-item {
-		font-size:22px !important;
+	.profile-image {
+		float: none;
+		width: 200%;
+		margin: 0 auto;
+	}
+	.aside {
+    	display: none;
+    }
+    .nav-item {
+    	font-size: 1.5rem;
+    }
+    .profile-image {
+	width: 300px;
+	border-radius: 15px;
 	}
 }
 @media all and (min-width: 768px) {
     .col-sm-3 {
-        width: 25%;
+        width: 25%;v
     }
     .col-sm-4 {
 	    width: 33.33%;
@@ -267,7 +242,7 @@ body {
         width: 100%;
     }
 }
-/* Header */
+/* Navigation */
 .fa {
 	color: #fff;
 }
@@ -280,65 +255,44 @@ body {
 a:hover {
 	font-weight: bold;
 }
-/* Icons section */
-.col-image {
-	width: 40px;
-	border: 1px solid lightgray;
-	border-radius: 100%;
+/* Main */
+.profile-image {
+	width: 200px;
 	padding: 10px;
+	border-radius: 15px;
 }
-.img {
-	width: 100%;
+.article {
+	margin: 5px;
+	border-radius: 5px;
 }
-/* Table section */
-.table {
-	display: table;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	border: 1px solid gray;
-	box-sizing: border-box;
-	border-collapse: collapse;
+.article a {
+	text-align: justify;
+	text-decoration: none;
 }
-.table-row {
-	display: table-row;
-	border: 1px solid gray;
+.aside {
+	margin: 5px;
+	border-radius: 5px;
 }
-.table-row:nth-child(even) {
-	background-color: lightgray;
+.aside ul {
+	list-style-type: none;
 }
-.table-cell {
-	display: table-cell;
-	padding: 15px;
+.aside li {
+	padding: 5px;
 }
-.table-row:first-child {
-	background-color: darkgray;
+.aside a {
+	text-decoration: none;
 }
-.table-row:nth-child(2) {
-	color: #E8776B;
-	font-size: 1.2em;
-}
-/* Input section */
-.sign-up {
-	width: 25%;
-	line-height: 20px;
+.search {
+	line-height: 24px;
+	font-size: 10px;
 	outline: none;
 }
-/* Profile section */
-.profile-img {
-	display: inline-block;
-	float: right;
-	width: 160px;
-	border-radius: 100%;
-}
-/* footer and social section */
+/*Footer */
 .share-buttons{
 	float: right;
 }
-.share-buttons a {
-	color: #fff;
-}
 .copyright {
-	font-size: 0.9rem;
+	font-size: 1rem;
 }
 .fa {
 	padding: 5px;
