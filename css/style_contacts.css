@@ -26,12 +26,6 @@ body {
 .to-center {
 	margin: 0 auto;
 }
-.inline-block {
-	display: inline-block;
-}
-.block {
-	display: block;
-}
 .gradient-primary {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -52,9 +46,6 @@ body {
 }
 .color-white {
 	color: #fff;
-}
-.main-color {
-	background-color: #fff;
 }
 .row:after {
 	display: block;
@@ -224,15 +215,15 @@ body {
 	text-decoration: none;
 	color: #fff;
 }
-a:hover {
-	font-weight: bold;
+header a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
 }
 /* Main */
-
-/* Input */
 .border-radius {
 	border-radius: 10px;
 }
+/* form section */
 input,
 select {
 	width: 100%;
@@ -261,22 +252,21 @@ input[type=email]:focus {
 input[type=button],
 input[type=submit],
 input[type=reset] {
-	width: 130px;
-	font-size: 10px;
-	margin: 0 auto;
+	width: 100px;
+	height: 50px;
+	font-size: 12px;
 	padding: 16px 32px;
 	text-decoration: none;
-	margin: 4px 2px;
 	cursor: pointer;
-	border-radius: 15px;
+	border-radius: 5px;
 	text-align: center;
 	display: inline-block;
 }
 input[type=button]:hover,
 input[type=submit]:hover,
 input[type=reset]:hover {
-	font-weight: bold;
-	transition: ease 0.5s;
+	color: #fff;
+	background-color: black;
 }
 input[type=checkbox],
 input[type=radio] {

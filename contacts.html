@@ -21,7 +21,7 @@
 <!-- Main  -->
 	<main class="input section-secondary clearfix">
 		<h1 class="title-primary text-center">Registration</h1>
-		<section class=" height col-md-6 col-sm-12 col-xs-12 text-center section-secondary clearfix">
+		<section class="col-md-6 col-sm-12 col-xs-12 text-center section-secondary clearfix">
 			<h2>Find us on map:</h2>
 			<iframe width="100%" height="400px" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDq4jC2f3TuaqDiprADq2qr8ZDITRGX8cA&q=Space+Needle,Seattle+WA" allowfullscreen>
 			</iframe>
@@ -55,7 +55,7 @@
 					<input type="radio" id="news" name="age" value="radio1" placeholder="Your Sex">Yes
 					<input type="radio" id="news" name="age" value="radio2" placeholder="Your Sex">No
 <!-- Countries selection -->
-					<label class="block" for="country">Where are you from?</label>
+					<label class="row" for="country">Where are you from?</label>
 					<select id="counrty">
 						<option value="AFG">Afghanistan</option>
 						<option value="ALA">Åland Islands</option>
@@ -309,10 +309,12 @@
 					</select>
 					<label for="comment">Write a comment</label>
 					<textarea id="comment" name="Comments" rows="4" cols="50"></textarea>
-					<input id="confirm1" type="checkbox" value="checkbox" required="checked">
-					<label for="confirm1">I have read the rules</label>
-					<input id="confirm2" type="checkbox" value="checkbox" required="checked">
-					<label for="confirm2">I agree with the rules</label>
+					<section class="row">
+						<input id="confirm1" type="checkbox" value="checkbox" required="checked">
+						<label for="confirm1">I have read the rules</label>
+						<input id="confirm2" type="checkbox" value="checkbox" required="checked">
+						<label for="confirm2">I agree with the rules</label>
+					</section>
 					<input type="reset" value="Reset" class="bg-grey">
 					<input type="submit" value="Submit" class="bg-red">
 				</form>

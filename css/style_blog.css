@@ -26,9 +26,6 @@ body {
 .to-center {
 	margin: 0 auto;
 }
-.inline-block {
-	display: inline-block;
-}
 .gradient-primary {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -49,9 +46,6 @@ body {
 }
 .color-white {
 	color: #fff;
-}
-.main-color {
-	background-color: #fff;
 }
 .row:after {
 	display: block;
@@ -139,7 +133,6 @@ body {
 .col-lg-8,
 .col-lg-12 {
 	float: left;
-	box-sizing: border-box;
 }
 @media all and (max-width: 543px) {
 	.col-xs-3 {
@@ -171,24 +164,10 @@ body {
 	.article {
 		text-align: justify;
 	}
-	.sign-up {
-		width: 120%;
-		outline: none;
-	}
 	.profile-image {
 		float: none;
 		width: 200%;
 		margin: 0 auto;
-	}
-	.aside {
-    	display: none;
-    }
-    .nav-item {
-    	font-size: 1.5rem;
-    }
-    .profile-image {
-	width: 300px;
-	border-radius: 15px;
 	}
 }
 @media all and (min-width: 768px) {
@@ -252,8 +231,9 @@ body {
 	text-decoration: none;
 	color: #fff;
 }
-a:hover {
-	font-weight: bold;
+header a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
 }
 /* Main */
 .profile-image {
@@ -265,9 +245,10 @@ a:hover {
 	margin: 5px;
 	border-radius: 5px;
 }
-.article a {
-	text-align: justify;
+.article a,
+.aside a {
 	text-decoration: none;
+	
 }
 .aside {
 	margin: 5px;
@@ -278,9 +259,6 @@ a:hover {
 }
 .aside li {
 	padding: 5px;
-}
-.aside a {
-	text-decoration: none;
 }
 .search {
 	line-height: 24px;

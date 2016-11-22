@@ -209,9 +209,6 @@ body {
 	width: 120%;
 	outline: none;
 	}
-	.nav-item {
-		font-size:22px !important;
-	}
 }
 @media all and (min-width: 768px) {
     .col-sm-3 {
@@ -266,16 +263,17 @@ body {
 }
 /* Header */
 .fa {
-	color: #812D46;
+	color: #fff;
 }
 .nav-item {
 	font-size: 24px;
 	padding: 5px;
 	text-decoration: none;
-	color: #812D46;
+	color: #fff;
 }
-a:hover {
-	font-weight: bold;
+.menu a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 5px;
 }
 /* Icons section */
 .col-image {
@@ -316,7 +314,7 @@ a:hover {
 }
 /* Input section */
 .sign-up {
-	width: 25%;
+	width: 30%;
 	line-height: 20px;
 	outline: none;
 }
