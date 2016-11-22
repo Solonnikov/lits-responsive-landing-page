@@ -266,13 +266,13 @@ body {
 }
 /* Header */
 .fa {
-	color: #fff;
+	color: #812D46;
 }
 .nav-item {
 	font-size: 24px;
 	padding: 5px;
 	text-decoration: none;
-	color: #fff;
+	color: #812D46;
 }
 a:hover {
 	font-weight: bold;
