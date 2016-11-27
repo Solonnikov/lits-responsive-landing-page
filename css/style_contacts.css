@@ -320,6 +320,7 @@ body {
 }
 .fa {
 	padding: 5px;
+	text-decoration: none;
 }
 .footer .fa:hover {
 	color: #812D46;
