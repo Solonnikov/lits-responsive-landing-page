@@ -1,0 +1,29 @@
+html,
+body {
+  font-family: 100% "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 16;
+  line-height: normal; }
+
+/* Helpers */
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
+.to-left {
+  float: left; }
+
+.to-right {
+  float: right; }
+
+.to-center {
+  margin: 0 auto; }
+
+.no-padding-bottom {
+  padding-bottom: 0; }
+
+/*# sourceMappingURL=style_scss.css.map */
