@@ -19,7 +19,7 @@ body {
 	text-align: justify;
 }
 .text-margin {
-	margin: 20px 0 20px 0;
+	margin: 20px 0;
 }
 .to-left {
 	float: left;
@@ -29,9 +29,6 @@ body {
 }
 .to-center {
 	margin: 0 auto;
-}
-.no-padding-bottom {
-	padding-bottom: 0;
 }
 .gradient-primary {
 	background-repeat: no-repeat;
@@ -114,161 +111,24 @@ body {
 }
 .clearfix:after {
 	display: block;
-	content: '';
+	content: ""
 	clear: both;
 }
 .row {
 	display: block;
-	margin-left: -15px;
-	margin-right: -15px;
+	padding-left: -15px;
+	padding-right: -15px;
 }
 .row:after {
 	display: table;
 	content: "";
 	clear: both;
 }
-.col-xs-3,
-.col-xs-4,
-.col-xs-6,
-.col-xs-8,
-.col-xs-9
-.col-xs-12,
-.col-sm-3,
-.col-sm-4,
-.col-sm-6,
-.col-sm-8,
-.col-sm-9
-.col-sm-12,
-.col-md-3,
-.col-md-4,
-.col-md-6,
-.col-md-8,
-.col-md-9
-.col-md-12,
-.col-lg-3,
-.col-lg-4,
-.col-lg-6,
-.col-lg-8,
-.col-lg-9
-.col-lg-12{
-	float: left;
-	padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 5px;
-    box-sizing: border-box;
-}
-@media all and (max-width: 543px) {
-	.col-xs-3 {
-		width: 25%;
-	}
-	.col-xs-4 {
-		width: 33.33%;
-	}
-	.col-xs-6 {
-	    width: 50%;
-	}
-	.col-xs-8 {
-		width: 66.66%;
-	}
-	.col-xs-9 {
-		width: 75%;
-	}
-	.col-xs-12 {
-	    width: 100%;
-	}
-	.section-primary {
-		padding: 1rem;
-	}
-	.section-secondary {
-		padding: 1rem;
-	}
-	.title-primary {
-		font-size: 3em;
-		text-align: center;
-	}
-	.title-secondary {
-		font-size: 2em;
-		text-align: center;
-	}
-	.text-wrapper {
-		text-align: justify;
-	}
-	.btn-wrapper {
-		text-align: center;
-	}
-	.img-primary {
-		width: 100%;
-	}
-	.article {
-		text-align: justify;
-	}
-}
-@media all and (min-width: 768px) {
-    .col-sm-3 {
-        width: 25%;
-    }
-    .col-sm-4 {
-	    width: 33.33%;
-	}
-    .col-sm-6 {
-        width: 50%;
-    }
-    .col-sm-8 {
-		width: 66.66%;
-	}
-	.col-sm-9 {
-		width: 75%;
-	}
-    .col-sm-12 {
-        width: 100%;
-    }
-}
-@media all and (min-width: 992px) {
-    .col-md-3 {
-        width: 25%;
-    }
-    .col-md-4 {
-		 width: 33.33%;
-	}
-    .col-md-6 {
-        width: 50%;
-    }
-    .col-md-8 {
-		width: 66.66%;
-	}
-	.col-md-9 {
-		width: 75%;
-	}
-    .col-md-12 {
-        width: 100%;
-    }
-}
-@media all and (min-width: 1200px) {
-    .col-lg-3 {
-        width: 25%;
-    }
-    .col-lg-4 {
-		width: 33.33%;
-	}
-    .col-lg-6 {
-        width: 50%;
-    }
-    .col-lg-8 {
-		width: 66.66%;
-	}
-	.col-lg-9 {
-		width: 75%;
-	}
-    .col-lg-12 {
-        width: 100%;
-    }
-}
 /* Header */
 .fa {
 	color: #fff;
 }
 .nav-item {
-	font-size: 1em;
 	padding: 5px;
 	text-decoration: none;
 	color: #fff;
@@ -338,4 +198,136 @@ body {
 }
 .footer .fa:hover {
 	color: #812D46;
+}
+.col-xs-3,
+.col-xs-4,
+.col-xs-6,
+.col-xs-8,
+.col-xs-9,
+.col-xs-12,
+.col-sm-3,
+.col-sm-4,
+.col-sm-6,
+.col-sm-8,
+.col-sm-9,
+.col-sm-12,
+.col-md-3,
+.col-md-4,
+.col-md-6,
+.col-md-8,
+.col-md-9,
+.col-md-12,
+.col-lg-3,
+.col-lg-4,
+.col-lg-6,
+.col-lg-8,
+.col-lg-9,
+.col-lg-12{
+	float: left;
+	padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+@media all and (max-width: 543px) {
+	.col-xs-3 {
+		width: 25%;
+	}
+	.col-xs-4 {
+		width: 33.33%;
+	}
+	.col-xs-6 {
+	    width: 50%;
+	}
+	.col-xs-8 {
+		width: 66.66%;
+	}
+	.col-xs-9 {
+		width: 75%;
+	}
+	.col-xs-12 {
+	    width: 100%;
+	}
+	.section-primary,
+	.section-secondary {
+		padding: 1rem;
+	}
+	.title-primary {
+		font-size: 3em;
+		text-align: center;
+	}
+	.title-secondary {
+		font-size: 2em;
+		text-align: center;
+	}
+	.text-wrapper,
+	.article {
+		text-align: justify;
+	}
+	.btn-wrapper {
+		text-align: center;
+	}
+	.img-primary {
+		width: 100%;
+	}
+}
+@media all and (min-width: 768px) {
+    .col-sm-3 {
+        width: 25%;
+    }
+    .col-sm-4 {
+	    width: 33.33%;
+	}
+    .col-sm-6 {
+        width: 50%;
+    }
+    .col-sm-8 {
+		width: 66.66%;
+	}
+	.col-sm-9 {
+		width: 75%;
+	}
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+@media all and (min-width: 992px) {
+    .col-md-3 {
+        width: 25%;
+    }
+    .col-md-4 {
+		 width: 33.33%;
+	}
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-8 {
+		width: 66.66%;
+	}
+	.col-md-9 {
+		width: 75%;
+	}
+    .col-md-12 {
+        width: 100%;
+    }
+}
+@media all and (min-width: 1200px) {
+    .col-lg-3 {
+        width: 25%;
+    }
+    .col-lg-4 {
+		width: 33.33%;
+	}
+    .col-lg-6 {
+        width: 50%;
+    }
+    .col-lg-8 {
+		width: 66.66%;
+	}
+	.col-lg-9 {
+		width: 75%;
+	}
+    .col-lg-12 {
+        width: 100%;
+    }
 }
