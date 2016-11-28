@@ -29,9 +29,6 @@ body {
 .to-center {
 	margin: 0 auto;
 }
-.no-padding-bottom {
-	padding-bottom: 0;
-}
 .gradient-primary {
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -124,29 +121,105 @@ body {
 	content: "";
 	clear: both;
 }
+/* Header */
+.fa {
+	color: #fff;
+}
+.nav-item {
+	padding: 5px;
+	text-decoration: none;
+	color: #fff;
+}
+.menu a:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	border-radius: 4px;
+}
+/* form section */
+.input,
+.select {
+	width: 100%;
+	padding: 10px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+	outline: none;
+	font-size: 12px;
+}
+.textarea {
+	width: 100%;
+	height: 100px;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	resize: none;
+	outline: none;
+	border: 1px solid lightgray;
+}
+.input[type=text]:focus,
+.input[type=password]:focus,
+.input[type=email]:focus {
+	background-color: lightgray;
+}
+.input[type=button],
+.input[type=submit],
+.input[type=reset] {
+	width: 100px;
+	height: 50px;
+	font-size: 12px;
+	padding: 16px 32px;
+	text-decoration: none;
+	cursor: pointer;
+	border-radius: 4px;
+	text-align: center;
+	display: inline-block;
+}
+.input[type=button]:hover,
+.input[type=submit]:hover,
+.input[type=reset]:hover {
+	color: #fff;
+	background-color: black;
+}
+.input[type=checkbox],
+.input[type=radio] {
+	display: inline-block;
+	width: 13px;
+    height: 13px;
+    margin:10px;
+}
+/*Footer */
+.copyright {
+	font-size: 0.7em;
+}
+.fa {
+	padding: 5px;
+	text-decoration: none;
+}
+.footer .fa:hover {
+	color: #812D46;
+}
 .col-xs-3,
 .col-xs-4,
 .col-xs-6,
 .col-xs-8,
-.col-xs-9
+.col-xs-9,
 .col-xs-12,
 .col-sm-3,
 .col-sm-4,
 .col-sm-6,
 .col-sm-8,
-.col-sm-9
+.col-sm-9,
 .col-sm-12,
 .col-md-3,
 .col-md-4,
 .col-md-6,
 .col-md-8,
-.col-md-9
+.col-md-9,
 .col-md-12,
 .col-lg-3,
 .col-lg-4,
 .col-lg-6,
 .col-lg-8,
-.col-lg-9
+.col-lg-9,
 .col-lg-12{
 	float: left;
 	padding-left: 15px;
@@ -247,81 +320,4 @@ body {
     .col-lg-12 {
         width: 100%;
     }
-}
-/* Navigation */
-.fa {
-	color: #fff;
-}
-.nav-item {
-	font-size: 1em;
-	padding: 5px;
-	text-decoration: none;
-	color: #fff;
-}
-.menu a:hover {
-	background-color: rgba(255, 255, 255, 0.2);
-	border-radius: 5px;
-}
-/* form section */
-.input,
-.select {
-	width: 100%;
-	padding: 10px;
-	margin: 0 auto;
-	margin-bottom: 10px;
-	box-sizing: border-box;
-	outline: none;
-	font-size: 11px;
-}
-.textarea {
-	width: 100%;
-	height: 100px;
-	padding: 12px 20px;
-	box-sizing: border-box;
-	border-radius: 4px;
-	resize: none;
-	outline: none;
-	border: 1px solid lightgray;
-}
-.input[type=text]:focus,
-.input[type=password]:focus,
-.input[type=email]:focus {
-	background-color: lightgray;
-}
-.input[type=button],
-.input[type=submit],
-.input[type=reset] {
-	width: 100px;
-	height: 50px;
-	font-size: 12px;
-	padding: 16px 32px;
-	text-decoration: none;
-	cursor: pointer;
-	border-radius: 5px;
-	text-align: center;
-	display: inline-block;
-}
-.input[type=button]:hover,
-.input[type=submit]:hover,
-.input[type=reset]:hover {
-	color: #fff;
-	background-color: black;
-}
-.input[type=checkbox],
-.input[type=radio] {
-	display: inline-block;
-	width: 13px;
-    height: 13px;
-    margin:10px;
-}
-/*Footer */
-.copyright {
-	font-size: 0.7em;
-}
-.fa {
-	padding: 5px;
-	text-decoration: none;
-}
-.footer .fa:hover {
-	color: #812D46;
 }

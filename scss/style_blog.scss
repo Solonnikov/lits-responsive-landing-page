@@ -4,6 +4,7 @@ $line-height: normal;
 
 $title-primary: 3em;
 $title-secondary: 2em;
+$title-third: 1.5em;
 $sp-padding: 6.25rem;
 $ss-padding: 1.25rem;
 $radius: 4px;
@@ -14,8 +15,9 @@ $color-black: #000;
 $color-red: #e8776b;
 $color-lightgray: #d3d3d3;
 $color-darkgray: #a9a9a9;
-$color-gray: #808080;
+$color-gray: rgba(128, 128, 128, 0.1);
 $color-darkred: #812d46;
+$color-lightred: #A56F66;
 $color-gray-transparent: rgba(255, 255, 255, 0.2);
 
 $padding-minus: -15px;
@@ -73,21 +75,28 @@ body {
 }
 .gradient-primary {
 	@extend .bg;
-	background: linear-gradient(to right, #812D46, #A56F66);
+	background: linear-gradient(to right, $color-darkred, $color-lightred);
 }
 .bg-red {
 	@extend .bg;
-	background-color: #E8776B;
+	background-color: $color-red;
 }
 .bg-blue {
 	@extend .bg;
-	background-color: #5E95CD;
+	background-color: $color-blue;
+}
+.bg-grey {
+	@extend .bg;
+	background-color: $color-gray;
 }
 .title-primary {
 	font-size: $title-primary;
 }
 .title-secondary {
 	font-size: $title-secondary;
+}
+.title-third {
+	font-size: $title-third;
 }
 .color-white {
 	color: $color-white;
@@ -139,14 +148,6 @@ body {
 		cursor: pointer;
 	}
 }
-.img-primary {
-	width: 50%;
-	float: right;
-}
-.text-wrapper {
-	width: 100%;
-	text-align: justify;
-}
 .clearfix:after {
 	display: block;
 	content: "";
@@ -175,67 +176,38 @@ body {
 	background-color: $color-gray-transparent;
 	@include border-radius($radius);
 }
-/* Icons section */
-.col-image {
-	width: 40px;
-	border: 1px solid $color-lightgray;
-	border-radius: 100%;
+/* Main */
+.profile-image {
+	width: 200px;
 	padding: 10px;
 }
-.img {
-	width: 100%;
+.article a,
+.aside a {
+	text-decoration: none;	
 }
-/* Table section */
-.table {
-	display: table;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	border: 1px solid $color-gray;
-	@include box-sizing(border-box);
-	border-collapse: collapse;
+.aside {
+	ul {
+	list-style-type: none;
+	}
+	li {
+	padding: 5px;
+	}
 }
-.table-row {
-	display: table-row;
-	border: 1px solid $color-gray;
-}
-.table-row:nth-child(even) {
-	background-color: $color-lightgray;
-}
-.table-cell {
-	display: table-cell;
-	padding: $padding-plus;
-}
-.table-row:first-child {
-	background-color: $color-darkgray;
-}
-.table-row:nth-child(2) {
-	color: $color-red;
-	font-size: 1.2em;
-}
-/* Input section */
-.sign-up {
-	line-height: 20px;
+.search {
+	line-height: 24px;
 	outline: none;
 }
-/* Profile section */
-.profile-img {
-	display: inline-block;
-	float: right;
-	width: 160px;
-	border-radius: 100%;
-}
-/* footer and social section */
-.share-buttons a {
-	color: $color-white;
-}
+/* Footer */
 .copyright {
 	font-size: $copyright;
 }
 .fa {
 	padding: 5px;
 }
-.footer .fa:hover {
-	color: #812D46;
+.footer {
+	.fa:hover {
+	color: $color-darkred;
+	}
 }
 .col-xs-3, .col-xs-4, .col-xs-6, .col-xs-8, .col-xs-9, .col-xs-12,
 .col-sm-3, .col-sm-4, .col-sm-6, .col-sm-8, .col-sm-9, .col-sm-12,
